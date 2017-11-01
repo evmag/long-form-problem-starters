@@ -24,7 +24,7 @@ public class GymChainInfo {
     public static final String JAMES_MEMBER_NAME = "James";
     public static final String MICHELA_MEMBER_NAME = "Michela";
 
-    public static final String YOUR_GYM_NAME = "Rainy Forest";
+    public static final String RAINY_FOREST_GYM_NAME = "Rainy Forest";
     public static final String VAGGELIS_MEMBER_NAME = "Vaggelis";
 
     public static void main(String[] args) {
@@ -62,10 +62,9 @@ public class GymChainInfo {
 
         WeightMachine wm = new WeightMachine("quadriceps", 75);
 
-        //TODO 2: pass in parameters to these methods:
-//        g1.setHasPool(...);
-//        wm.setWeight(...);
-//        g1.addWeight(...);
+        g1.setHasPool(true);
+        wm.setWeight(100);
+        g1.addWeight(wm);
 
 
         Gym g2 = new DeluxeGym(PINE_VALLEY_GYM_NAME);
@@ -77,7 +76,7 @@ public class GymChainInfo {
         chain.addGym(g3);
 
         //TODO 4: pick a variable name for the gym below and uncomment:
-//        Gym ... = new Gym(YOUR_GYM_NAME);
+//        Gym ... = new Gym(RAINY_FOREST_GYM_NAME);
         //TODO 4: add your new gym's variable name and uncomment:
 //        initializeGym0(...);
         //TODO 4: add your new gym's variable name and uncomment:
