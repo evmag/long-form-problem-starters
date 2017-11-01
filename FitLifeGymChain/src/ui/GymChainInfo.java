@@ -48,11 +48,11 @@ public class GymChainInfo {
         chain.signUpMember(m2);
         chain.signUpMember(m3);
 
-        //TODO 3: construct a new Member object with the parameter VAGGELIS_MEMBER_NAME
-//        Member m4 = ...
-        //TODO 3: uncomment these 2 lines:
-//        m4.setMembershipLevel(DELUXE);
-//        chain.signUpMember(m4);
+
+        Member m4 = new Member(VAGGELIS_MEMBER_NAME);
+
+        m4.setMembershipLevel(DELUXE);
+        chain.signUpMember(m4);
     }
 
     private static void loadGyms(GymChain chain){
