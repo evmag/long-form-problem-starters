@@ -75,21 +75,21 @@ public class GymChainInfo {
         initializeGym3(g3);
         chain.addGym(g3);
 
-        //TODO 4: pick a variable name for the gym below and uncomment:
-//        Gym ... = new Gym(RAINY_FOREST_GYM_NAME);
-        //TODO 4: add your new gym's variable name and uncomment:
-//        initializeGym0(...);
-        //TODO 4: add your new gym's variable name and uncomment:
-//        chain.addGym(...);
+
+        Gym g4 = new Gym(RAINY_FOREST_GYM_NAME);
+
+        initializeGym0(g4);
+
+        chain.addGym(g4);
     }
 
 
     private static void initializeGym0(Gym gym){
-        //TODO 4: uncomment the next 4 lines:
-//         Barbell bar = //TODO 4: make a new barbell
-//         IndoorBike bike = //TODO 4: make a new IndoorBike
-//         gym.addWeight(bar);
-//         gym.addCardioMachine(bike);
+
+         Barbell bar = new Barbell(20);
+         IndoorBike bike = new IndoorBike();
+         gym.addWeight(bar);
+         gym.addCardioMachine(bike);
 
 //        NOTE: the Barbell constructor takes one parameter, an int
 //        NOTE: the IndoorBike constructor doesn't take any parameters
